@@ -8,8 +8,8 @@
  * Created: 20-Mar-2022
  */
 
-DROP SCHEMA IF EXISTS `userdb`;
-CREATE SCHEMA IF NOT EXISTS `userdb` DEFAULT CHARACTER SET latin1;
+--DROP SCHEMA IF EXISTS `userdb`;
+--CREATE SCHEMA IF NOT EXISTS `userdb` DEFAULT CHARACTER SET latin1;
 USE `userdb`;
 -- -----------------------------------------------------
 -- Table `userdb`.`role`

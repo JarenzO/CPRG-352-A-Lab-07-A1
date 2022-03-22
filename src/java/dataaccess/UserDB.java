@@ -11,7 +11,7 @@ import models.User;
  * @author Ronald Tran
  * @version March 16, 2022
  */
-public class UserDB 
+public class UserDB
 {
     public List<User> getAll() throws Exception
     {
@@ -21,7 +21,7 @@ public class UserDB
         PreparedStatement ps = null;
         ResultSet rs = null;
         
-        String sql = "SELECT * FROM userdb";
+        String sql = "SELECT * FROM user";
         
         try
         {
@@ -60,7 +60,7 @@ public class UserDB
         PreparedStatement ps = null;
         ResultSet rs = null;
         
-        String sql = "SELECT * FROM userdb WHERE email = ?";
+        String sql = "SELECT * FROM user WHERE email = ?";
         
         try
         {
@@ -89,7 +89,7 @@ public class UserDB
         Connection con = cp.getConnection();
         PreparedStatement ps = null;
         
-        String sql = "INSERT INTO userdb (email, active, first_name, last_name, password, role) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO user (email, active, first_name, last_name, password, role) VALUES (?, ?, ?, ?, ?, ?)";
         
         try
         {
@@ -115,7 +115,7 @@ public class UserDB
         Connection con = cp.getConnection();
         PreparedStatement ps = null;
         
-        String sql = "UPDATE userdb SET email = ?, active = ?, first_name = ?, last_name = ?, password = ?, role = ?, WHERE email = ?";
+        String sql = "UPDATE user SET email = ?, active = ?, first_name = ?, last_name = ?, password = ?, role = ?, WHERE email = ?";
         
         try
         {
@@ -142,7 +142,7 @@ public class UserDB
         Connection con = cp.getConnection();
         PreparedStatement ps = null;
         
-        String sql = "DELETE FROM userdb WHERE email = ?";
+        String sql = "DELETE FROM user WHERE email = ?";
         
         try
         {
